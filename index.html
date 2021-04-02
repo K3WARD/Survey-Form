@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Survey Form Assignment</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+<body>
+    <header class="flex-container">
+        <div id="picture">
+            <figure id="img-computerr">
+                <img id="computer-img" src="img/adam-nowakowski-D4LDw5eXhgg-unsplash.jpg" alt="man in front of computers" />
+            </figure>
+        </div>
+        <div id="headertitle">
+            <h1 id="title">Coding Training Survey</h1>
+            <br />
+            <p id="description">
+                The following survey is to get an understanding of who is studying coding. What they are studying, how they are studying.
+            </p>
+        </div>
+    </header>
+
+    <hr class="line" />
+
+    <form id="survey-form">
+<p>Please complete the following survey and submit so we can get an understanding of what people are studying and how. </p>
+
+        <div class="form-group">
+            <label id="name-label" for="name">Name:</label><br />
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required />
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label id="email-label" for="name">Email:</label><br />
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label id="number-label" for="name">Age:</label><br />
+            <input id="number" type="number" min="10" max="100" name="number" placeholder="age" required />
+        </div>
+        <br />
+
+        <div class="form-group">
+            <p>Are you currently working in IT?</p>
+            <input type="radio" id="yes" name="worksinIT" value="yes" />
+            <label for="yes">Yes</label><br />
+            <input type="radio" id="no" name="worksinIT" value="no" />
+            <label for="no">No</label><br />
+        </div>
+        <br />
+
+        <div class="form-group">
+            <p>What level of coding are you currently at?</p>
+            <select id="dropdown" name="level" class="form-control" required>
+          <option disabled selected value>Select coding level</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+        </div>
+        <br />
+        <div class="form-group">
+            <p>Are you a full-time or part-time student?</p>
+            <input type="radio" id="fulltime" name="partorfull" value="fulltime" />
+            <label for="fulltime">Fulltime</label><br />
+            <input type="radio" id="parttime" name="partorfull" value="parttime" />
+            <label for="parttime">Partime</label><br />
+        </div>
+        <br />
+
+        <div class="form-group">
+            <p>How long have you been studing?</p>
+            <select id="dropdowntime" name="time" class="form-control" required>
+          <option disabled selected value>Select time studing</option>
+          <option value="sixmonths">Less the 6 months</option>
+          <option value="year">Six months to a year</option>
+          <option value="onetwoyears">One to two years</option>
+          <option value="morethantwo">More than two years</option>
+        </select>
+        </div>
+        <br />
+
+        <div class="form-group">
+            <p>What resources are you using to learn to code?</p>
+        
+            <input type="checkbox" id="resource1" name="resource1" value="freecodecamp" />
+            <label for="resource1">freecodecamp</label>
+<br>
+            <input type="checkbox" id="resource2" name="resource2" value="coursera" />
+            <label for="language2">Coursera</label>
+            <br>
+            <input type="checkbox" id="resource3" name="resource3" value="udemy" />
+            <label for="language3">Udemy</label>
+            <br>
+            <input type="checkbox" id="resource4" name="resource4" value="udacity" />
+            <label for="resource4">Udacity</label>
+            <br>
+            <input type="checkbox" id="resource5" name="resource5" value="codeacademy" />
+            <label for="resource5">Codecademy</label>
+            <br>
+            <input type="checkbox" id="resource6" name="resource6" value="edx" />
+            <label for="resource6">C+</label>
+            <br>
+            <input type="checkbox" id="resource7" name="resource7" value="codeschool" />
+            <label for="resource6">Code School</label>
+            <br>
+            <input type="checkbox" id="resource8" name="resource8" value="masterit" />
+            <label for="resource8">Master it</label>
+            <br>
+            <input type="checkbox" id="resource9" name="resource9" value="other" />
+            <label for="resource9">Other (please specify)</label>
+            
+            <label for="otherresource"></label><br />
+            <input type="text" id="otherresource" name="otherresource" placeholder="Enter your provider here..."/>
+        </div>
+        <br>
+        <div class="form-group">
+            <p>What Langauge / languages are you learning?</p>
+            <input type="checkbox" id="language1" name="language1" value="python" />
+            <label for="language1">Python</label>
+            <br>
+            <input type="checkbox" id="language2" name="language2" value="javascript" />
+            <label for="language2">JavaScript</label>
+            <br>
+            <input type="checkbox" id="language3" name="language3" value="java" />
+            <label for="language3">Java</label>
+            <br>
+            <input type="checkbox" id="language4" name="language4" value="csharp" />
+            <label for="language4">C#</label>
+            <br>
+            <input type="checkbox" id="language5" name="language5" value="c" />
+            <label for="language5">C</label>
+            <br>
+            <input type="checkbox" id="language6" name="language6" value="cplusplus" />
+            <label for="language6">C+</label>
+            <br>
+            <input type="checkbox" id="language7" name="language7" value="go" />
+            <label for="language7">Go</label>
+            <br>
+            <input type="checkbox" id="language8" name="language8" value="r" />
+            <label for="language8">R</label>
+            <br>
+            <input type="checkbox" id="language9" name="language9" value="swift" />
+            <label for="language9">Swift</label>
+            <br>
+            <input type="checkbox" id="language10" name="language10" value="php" />
+            <label for="language10">PHP</label>
+            <br>
+            <input type="checkbox" id="language11" name="language11" value="htmlcss" />
+            <label for="language10">HTML and CSS</label>
+            <br>
+            <input type="checkbox" id="language12" name="language12" value="other" />
+            <label for="language10">Other (please specify)</label>
+            
+            <label for="otherlanguage"></label><br />
+            <input type="text" id="otherlanguage" name="otherlanguage" placeholder="Enter your language here..."/>
+        </div>
+        <br />
+        <div class="form-group">
+            <p>Would you like to add any comments on your leraning journey?</p>
+            <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+
+    <footer></footer>
+</body>
+
+</html>

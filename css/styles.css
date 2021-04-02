@@ -1,0 +1,125 @@
+html {
+    font-size: 2vw;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #116466;
+}
+
+body {
+    padding: 0 2% 0 2%;
+    min-height: 100vh;
+}
+
+hr.line {
+    border: 3px solid #2c3531;
+    margin-bottom: 50px;
+}
+
+header {
+    color: #ffffff;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#picture {
+    display: flexbox;
+    width: 30%;
+    height: auto;
+}
+
+#headertitle {
+    display: flexbox;
+    width: 60%;
+    height: auto;
+    text-align: left;
+}
+
+#computer-img {
+    width: 85%;
+    border: solid;
+    border-radius: 2px;
+    border-color: #d9B08C;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1em;
+}
+
+form {
+    width: 70%;
+    padding: 0 10% 0 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: solid;
+    border-width: 10px;
+    border-color: #2C3531;
+    border-radius: 20px;
+
+}
+
+.form-group {
+    background-color: #FFCB9A;
+    border: solid;
+    border-color: #D9B08C;
+    border-width: 3px;
+    border-radius: 5px;
+    padding: 0 2% 2% 2%;
+    font-size: 1em;
+   }
+
+   .form-group p {
+       font-size: 1em !important;
+   }
+
+   input[type=text], [type=email], [type=number], select{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #2C3531;
+    border-radius: 4px;
+    background-color: #D1E8E2;
+  }
+
+textarea {
+    width: 80%;
+    height: 150px;
+    padding: 12px 20px;
+    border: solid;
+    border-color: #2C3531;
+    background-color: #D1E8E2;
+    border-radius: 4px;
+    resize: none;
+}
+
+input[type=submit] {
+    background-color: #D9B08C;
+    border: solid;
+    border-color: #2C3531;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+ input[type=checkbox] {
+    vertical-align: middle;
+    transform: scale(2);
+    padding-right: 15px;
+ }
+
+ input[type=radio] {
+    vertical-align: middle;
+    transform: scale(2);
+    
+    
+    
+
+ }
